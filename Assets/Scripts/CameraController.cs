@@ -21,12 +21,12 @@ public class CameraController : MonoBehaviour
             float joyX = joystick.Horizontal;
             float joyY = joystick.Vertical;
 
-            if (Mathf.Abs(joyX) > 0.7f)
+            if (Mathf.Abs(joyX) > 0.5f)
             {
                 mouseX = joyX * sensitivityJoystick;
             }
 
-            if (Mathf.Abs(joyY) > 0.7f)
+            if (Mathf.Abs(joyY) > 0.5f)
             {
                 mouseY = joyY * sensitivityJoystick;
             }
